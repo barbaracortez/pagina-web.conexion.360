@@ -138,7 +138,15 @@
   line-height: 1.7;
 }
 
-@media (max-width: 900px) {
-  .grid { grid-template-columns: 1fr; gap: 3rem; }
-  .infoPara { max-width: 100%; }
+@media (max-width: 640px) {
+  .channelValue {
+    font-size: .78rem;
+    word-break: break-all;
+  }
+  .formWrap {
+    padding: 1.8rem 1.2rem;
+  }
+  .input {
+    font-size: .9rem;
+  }
 }

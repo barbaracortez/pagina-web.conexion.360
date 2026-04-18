@@ -133,7 +133,7 @@ function Hero() {
           </div>
           <div className={styles.statSep} />
           <div className={styles.stat}>
-            <span className={styles.statNum}>7 días</span>
+            <span className={styles.statNum}>30 días</span>
             <span className={styles.statLabel}>Entrega promedio</span>
           </div>
         </div>

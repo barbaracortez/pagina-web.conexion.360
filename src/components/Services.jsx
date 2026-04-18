@@ -7,7 +7,7 @@ const SERVICES = [
     tag: 'Más popular',
     title: 'Sitio Web Corporativo',
     desc: 'Presencia online profesional para tu empresa. Diseño elegante, secciones personalizadas y optimizado para posicionamiento en Google.',
-    features: ['Hasta 6 páginas', 'Diseño a medida', 'Formulario de contacto', 'SEO básico incluido'],
+    features: ['Diseño a medida', 'Formulario de contacto', 'SEO básico incluido'],
     highlight: true,
   },
   {

@@ -25,7 +25,7 @@ function WhatWeDo() {
                 'Diseño moderno adaptado a tu marca',
                 'Optimizado para celulares y tablets',
                 'Rápido, seguro y listo para Google',
-                'Entrega en tiempo récord',
+                
               ].map(item => (
                 <li key={item} className={styles.checkItem}>
                   <span className={styles.check}>✓</span>
