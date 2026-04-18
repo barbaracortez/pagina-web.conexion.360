@@ -1,0 +1,100 @@
+.footer {
+  background: rgba(4,7,15,0.97);
+  border-top: 1px solid rgba(56,189,248,.1);
+}
+.inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 4.5rem 2rem 3rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.brand { display: flex; flex-direction: column; gap: .8rem; }
+.logo {
+  display: flex; align-items: center; gap: 10px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: -.02em;
+}
+.logoImg {
+  width: 46px; height: 46px;
+  object-fit: contain;
+  border-radius: 50%;
+  filter:
+    drop-shadow(0 0 8px rgba(56,189,248,.8))
+    drop-shadow(0 0 20px rgba(56,189,248,.4));
+  transition: filter .3s;
+}
+.logo:hover .logoImg {
+  filter:
+    drop-shadow(0 0 12px rgba(56,189,248,1))
+    drop-shadow(0 0 30px rgba(56,189,248,.6));
+}
+.logoText strong { color: #38bdf8; }
+.tagline {
+  font-size: .85rem;
+  font-weight: 300;
+  color: rgba(255,255,255,.5);
+  max-width: 210px;
+  line-height: 1.65;
+}
+.socials { display: flex; gap: .7rem; margin-top: .3rem; }
+.social {
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 8px;
+  color: rgba(255,255,255,.6);
+  transition: color .25s, border-color .25s, background .25s;
+}
+.social:hover {
+  color: #38bdf8;
+  border-color: rgba(56,189,248,.4);
+  background: rgba(56,189,248,.08);
+}
+
+.col { display: flex; flex-direction: column; gap: .6rem; }
+.colTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #38bdf8;
+  margin-bottom: .3rem;
+}
+.link {
+  font-size: .875rem;
+  font-weight: 300;
+  color: rgba(255,255,255,.55);
+  transition: color .22s;
+  display: flex; align-items: center; gap: .4rem;
+}
+.link:hover { color: #fff; }
+.linkWa:hover { color: #25d366; }
+
+.bottom {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-top: 1px solid rgba(255,255,255,.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem;
+  font-size: .78rem;
+  color: rgba(255,255,255,.35);
+}
+.made { color: rgba(255,255,255,.25); }
+
+@media (max-width: 900px) {
+  .inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
+}
+@media (max-width: 560px) {
+  .inner { grid-template-columns: 1fr; padding: 3rem 1.5rem 2rem; }
+  .bottom { flex-direction: column; text-align: center; }
+}
