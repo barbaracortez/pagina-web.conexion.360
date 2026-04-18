@@ -92,7 +92,7 @@ function Hero() {
       <div className={styles.inner}>
         {/* Logo grande en hero */}
         <div className={`${styles.logoWrap} fade-up`}>
-          <img src="/public/logo-whatssap.jpeg" alt="Conexión 360°" className={styles.logoHero} />
+          <img src="/logo-whatssap.jpeg" alt="Conexión 360°" className={styles.logoHero} />
         </div>
 
         <span className={`${styles.badge} fade-up-d1`}>

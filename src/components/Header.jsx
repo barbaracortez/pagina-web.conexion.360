@@ -24,7 +24,7 @@ function Header() {
       <div className={styles.inner}>
         {/* Logo */}
         <a href="#inicio" className={styles.logo}>
-          <img src="/public/logo-whatssap.jpeg" alt="Conexión 360° logo" className={styles.logoImg} />
+          <img src="/logo-whatssap.jpeg" alt="Conexión 360° logo" className={styles.logoImg} />
           <span className={styles.logoText}>
             Conexión<strong>360°</strong>
           </span>

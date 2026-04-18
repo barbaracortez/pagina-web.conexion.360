@@ -8,7 +8,7 @@ function Footer() {
 
         <div className={styles.brand}>
           <div className={styles.logo}>
-            <img src="/public/logo-whatssap.jpeg" alt="Conexión 360°" className={styles.logoImg} />
+            <img src="/logo-whatssap.jpeg" alt="Conexión 360°" className={styles.logoImg} />
             <span className={styles.logoText}>Conexión<strong>360°</strong></span>
           </div>
           <p className={styles.tagline}>
