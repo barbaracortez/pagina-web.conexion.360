@@ -56,7 +56,7 @@ function Services() {
                 ))}
               </ul>
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer"
-                 className={`btn ${s.highlight ? 'btn--primary' : 'btn--outline'} ${styles.cardBtn}`}>
+                className={`btn btn--wa ${styles.cardBtn}`}>
                 Consultar precio
               </a>
             </div>

@@ -32,16 +32,15 @@
   background: radial-gradient(ellipse 70% 50% at 50% -10%, rgba(37,99,235,.07), transparent);
   pointer-events: none;
 }
-.card:hover {
-  transform: translateY(-8px);
-  border-color: rgba(56,189,248,.25);
-  box-shadow: 0 24px 60px rgba(4,7,15,.65);
+.cardHL:hover {
+  border-color: rgba(56,189,248,.35) !important;
+  box-shadow: 0 24px 60px rgba(4,7,15,.65) !important;
 }
 
 .cardHL {
-  background: linear-gradient(160deg, rgba(13,31,74,.9) 0%, rgba(10,20,50,.95) 100%);
-  border-color: rgba(56,189,248,.35) !important;
-  box-shadow: 0 0 0 1px rgba(56,189,248,.12), 0 20px 60px rgba(4,7,15,.55);
+  background: rgba(11,20,40,0.7);
+  border-color: rgba(255,255,255,.08);
+  box-shadow: none; 
 }
 .cardHL:hover {
   border-color: rgba(56,189,248,.6) !important;
@@ -49,16 +48,7 @@
 }
 
 .ribbon {
-  position: absolute;
-  top: 16px; right: -28px;
-  background: #2563eb;
-  color: #fff;
-  font-family: 'Outfit', sans-serif;
-  font-size: .7rem;
-  font-weight: 700;
-  letter-spacing: .06em;
-  padding: .3rem 2.4rem;
-  transform: rotate(35deg);
+  display: none;
 }
 
 .cardIcon { font-size: 2.2rem; display: block; margin-bottom: .5rem; }
