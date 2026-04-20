@@ -11,12 +11,29 @@ function Contact() {
     setForm(prev => ({ ...prev, [name]: value }))
   }
 
-  const submit = e => {
+const submit = async (e) => {
     e.preventDefault()
     if (!form.name || !form.email || !form.message) return
     setStatus('sending')
-    // Simulate send (replace with real endpoint / EmailJS / formspree)
-    setTimeout(() => setStatus('sent'), 1200)
+
+    try {
+      const res = await fetch('https://formspree.io/f/mbdqkblg', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          message: form.message,
+        }),
+      })
+      if (res.ok) {
+        setStatus('sent')
+      } else {
+        setStatus('error')
+      }
+    } catch {
+      setStatus('error')
+    }
   }
 
   return (
